@@ -1,0 +1,25 @@
+
+<form class="new-user-form" {{action saveNewPerson on="submit"}}>
+    <p class="user-form__item">
+      <label class="firstname__label">First Name</label>
+      {{input type="text" class="firstname__input" value=firstname}}
+    </p>
+
+    <p class="user-form__item">
+      <label class="lastname__label">Last Name</label>
+      {{input type="text" class="lastname__input" value=lastname}}
+    </p>
+
+    <p class="user-form__item">
+      <label class="address__label">Address</label>
+      {{input type="text" class="address__input" value=address}}
+    </p>
+
+    <p class="user-form__item">
+      <label class="phoneNumber__label">Phone Number</label>
+      {{input type="text" class="phoneNumber__input" value=phoneNumber}}
+    </p>
+    <button>Save</button>
+</form>
+
+{{outlet}}
